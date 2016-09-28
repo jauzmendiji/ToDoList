@@ -14,5 +14,5 @@ mysql_query($desarchivar);
 mysql_query($ezabatu);
 mysql_query($fk1);
 mysql_close($dp);
-header("location:listasArchivadas.php");
+header("location:verListas.php");
 ?>

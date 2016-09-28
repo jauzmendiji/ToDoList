@@ -13,12 +13,12 @@ if(!$result) {
     die("Database query failed: " . mysql_error());
 }
 while ($row = mysql_fetch_array($result)) {
-    $idUsuario = $row['num'];
+    $idUsuario = $row['idUser'];
 }
 
 $compartir = "INSERT INTO usuarioLista(idUser, idLista) VALUES ('$idUsuario', '$idLista')";
 
 mysql_query($compartir);
 mysql_close($dp);
-header("location:hasiera.html");
+header("location:verListas.php");
 ?>

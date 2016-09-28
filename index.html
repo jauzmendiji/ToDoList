@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="/style.css" />
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         
@@ -11,41 +11,31 @@
     </head>
     <body>
         <div class="container-fluid">
-        <div id="login" class="col-xs-12 col-md-6">
-            <br/><br/>
-            <form enctype="multipart/form-data" action="login.php" method="post">
-            <table align="center">
-                <th><tr></tr></th>
-            	<tr>
-                    <td><input type="text" name="usuario" id="usuario" placeholder="Usuario"></td>
-                </tr>
-                <tr>
-                    <td><input type="password" name="pass" id="pass" placeholder="Contraseña"></td>
-                </tr>
-                <tr>
-                <td colspan="2" align="center"><input type="submit" class="button" name="entrar" value="Entrar" id="entrar"></td><tr/>
-            </table>
-            </form>
-        </div>
-         <div id="register" class="col-xs-12 col-md-6">
-            <br/><br/>
-            <form enctype="multipart/form-data" action="register.php" method="post">
-            <table align="center">
-                <tr>
-                    <td><input type="text" name="user" id="user" placeholder="Usuario"></td>
-                </tr>
-                <tr>
-                    <td><input type="password" name="password" id="password" placeholder="Contraseña"></td>
-                </tr>
-                <tr>
-                    <td><input type="password" name="password2" id="password2" placeholder="Repite la contraseña"></td>
-                <tr/>
-                <tr>
-                <td colspan="2" align="center"><input class="button" type="submit" name="registrar" value="Registrar" id="registro"></td>
-                <tr/>
-            </table>
-            </form>
-        </div>
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-2">
+                    <div class="row login">
+                    <form enctype="multipart/form-data" action="login.php" method="post">
+                        
+                        <input class="col-xs-12 form-control" type="text" name="usuario" id="usuario" placeholder="Usuario">
+                        <input class="col-xs-12 form-control" type="password" name="pass" id="pass" placeholder="Contraseña">
+                        
+                        <input type="submit" class="btn btn-primary btn-sm col-xs-12 text-uppercase" name="entrar" value="Entrar" id="entrar"></input>
+                    </form>
+                    </div>
+                </div>
+                 <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-1">
+                    <div class="row login">
+                    <form enctype="multipart/form-data" action="register.php" method="post">
+                        <input class="col-xs-12 form-control" type="text" name="user" id="user" placeholder="Usuario">
+                        <input class="col-xs-12 form-control" type="password" name="password" id="password" placeholder="Contraseña">
+                        <input class="col-xs-12 form-control" type="password" name="password2" id="password2" placeholder="Repite la contraseña">
+                        
+                        <input class="btn btn-primary btn-sm col-xs-12 text-uppercase" type="submit" name="registrar" value="Registrar" id="registro"></td>
+                        
+                    </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>

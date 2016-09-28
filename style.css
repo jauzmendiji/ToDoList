@@ -232,18 +232,6 @@ iframe {
     padding: 5px;
     color: white;
 }
-#login {
-    font-family: fuente;
-    position: absolute;
-    margin-left: 650px;
-    margin-top: 200px;
-    border: 2px solid;
-    background-color: #83b5dd;
-    border-radius: 10px;
-    padding: 5px;
-    color: white;
-    
-}
 
 #index{
     border-style:solid;
@@ -409,12 +397,173 @@ iframe {
 }*/
 
 
-/* Bootstrap klaseak override */
+/* Klase onak */
+
+.login {
+    
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+    margin-top: 200px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form-control-in {
+    display: grid;
+    height: 33px;
+    width: 250px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    margin-bottom: inherit;
+}
+
+.form-control {
+    
+    margin-bottom: 10px;
+}
 
 .btn-primary {
     
-    color: #f6f6f6 !important;
-    background-color: transparent !important;
-    border-color: transparent !important;
-    font-size: 25px !important;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.menu {
+    
+    height: 60px;
+}
+
+.btn-secondary {
+    
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #129793;
+    border: none !important;
+    border-radius: 0px !important;
+    height: 60px;
+    width: 100%;
+    padding-top: 15px !important;
+}
+
+.btn-secondary:focus, .btn-secondary:hover {
+    
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.btn-hiru {
+    
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #505050;
+    border: none !important;
+    border-radius: 0px !important;
+    height: 60px;
+    width: 100%;
+    padding-top: 15px !important;
+}
+
+.btn-hiru:focus, .btn-hiru:hover {
+    
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.btn-lau {
+    
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #ff7260;
+    border: none !important;
+    border-radius: 0px !important;
+    height: 60px;
+    width: 100%;
+    padding-top: 15px !important;
+}
+
+.btn-lau:focus, .btn-lau:hover {
+    
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.btn-bost {
+    
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #9bd7d5;
+    border: none !important;
+    border-radius: 0px !important;
+    height: 60px;
+    width: 100%;
+    padding-top: 15px !important;
+}
+
+.btn-bost:focus, .btn-bost:hover {
+    
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.btn-irten {
+    
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #337ab7;
+    border: none !important;
+    border-radius: 0px !important;
+    height: 60px;
+    width: 100%;
+    padding-top: 15px !important;
+}
+
+.btn-irten:focus, .btn-irten:hover {
+    
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.p-x-0 {
+    
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.content {
+    
+    height: 740px;
+    width: 100%;
+    border-width: 0px;
+}
+
+::-webkit-scrollbar {
+            
+    width: 0px;
+}
+
+.close {
+
+    font-size: 30px !important;
+    vertical-align: top;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    
+    vertical-align: middle !important;
 }
